@@ -294,7 +294,7 @@ body:not(.loading) #team_menu.active {
   right: 0;
   width: 170px;
   height: 300px;
-  background: url("https://localhost:8080/background.png") no-repeat bottom right;
+  background: url("https://raw.githubusercontent.com/wdiazux/slack-tomorrow-theme/master/background.png") no-repeat bottom right;
   background-size: contain;
 }
 
