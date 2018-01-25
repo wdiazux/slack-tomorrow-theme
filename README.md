@@ -1,4 +1,4 @@
-# Slack Black Theme
+# Slack Tomorrow Theme
 
 A slack theme using Tomorrow Night colors
 
