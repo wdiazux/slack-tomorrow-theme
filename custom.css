@@ -393,6 +393,9 @@ body:not(.loading) #team_menu.active {
   background: -moz-linear-gradient(top, rgba(29, 31, 33, 0) 0%, #1d1f21 100%);
   background: -webkit-linear-gradient(top, rgba(29, 31, 33, 0) 0%, #1d1f21 100%);
   background: linear-gradient(to bottom, rgba(29, 31, 33, 0) 0%, #1d1f21 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001d1f21', endColorstr='#1d1f21',GradientType=0 );
+}
+
+.cm-s-default .cm-def {
+  color: #81a2be;
 }
 /*# sourceMappingURL=custom.css.map */
