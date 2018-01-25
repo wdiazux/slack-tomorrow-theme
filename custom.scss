@@ -1,0 +1,385 @@
+// Colors
+$background: #1d1f21;
+$current-line: #282a2e;
+$selection: #373b41;
+$foreground: #c5c8c6;
+$comment: #969896;
+$red: #cc6666;
+$orange: #de935f;
+$yellow: #f0c674;
+$green: #b5bd68;
+$aqua: #8abeb7;
+$blue: #81a2be;
+$purple: #b294bb;
+$white: #ffffff;
+$black: #000000;
+$mine_shaft: #3C3C3C;
+$shark: #252526;
+
+// General style
+.client_container {
+    background: $background;
+	color: $foreground;
+
+	h1,
+	h2,
+	h3,
+	h4 {
+        color: $foreground;
+    }
+
+    a {
+        color: $blue;
+        &:link,
+        &:visited {
+            color: $blue;
+        }
+        &:active,
+        &:focus,
+        &:hover {
+            color: lighten($color: $blue, $amount: 15%);
+        }
+    }
+
+    .uneditable-input,
+    input[type=text],
+    input[type=password],
+    input[type=datetime],
+    input[type=datetime-local],
+    input[type=date],
+    input[type=month],
+    input[type=time],
+    input[type=week],
+    input[type=number],
+    input[type=email],
+    input[type=tel],
+    input[type=color],
+    input[type=search],
+    textarea {
+        background-color: $selection;
+	}
+
+    code {
+        color: $red;
+        background-color: $current-line;
+        border: 1px solid $selection;
+    }
+    pre {
+        color: $foreground;
+        background: $current-line;
+    }
+}
+
+// Channel Bar
+.client_channels_list_container {
+    background: $background;
+}
+.messages_header,
+.channel_header_icon,
+.channel_title .channel_name {
+	color: $foreground;
+}
+
+#team_menu,
+#team_menu_overlay,
+#col_channels_overlay,
+body:not(.loading) #team_menu:hover,
+body:not(.loading) #team_menu.active {
+	background: $mine_shaft;
+	color: $foreground;
+}
+
+// Button select
+.c-input_select {
+	background: $selection;
+}
+
+// Panel messages
+.p-message_pane__foreword__description,
+.p-message_pane__limited_history_alert {
+	color: $foreground;
+}
+
+// Messages
+
+// Header
+.channel_header {
+	background: $mine_shaft;
+	color: $foreground;
+}
+
+.c-message_list__day_divider__label__pill {
+	background: $current-line;
+}
+.c-message_list__day_divider__label {
+	color: $foreground;
+}
+.c-message_list__day_divider__line {
+	border-top: 1px solid $current-line;
+}
+
+// Header separator
+.p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before,
+.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
+	background: $mine_shaft;
+	border-bottom: 1px solid $mine_shaft;
+}
+
+// Search input
+.search_form,
+.ql-container.texty_single_line_input {
+	background: $current-line;
+	color: $foreground;
+}
+.ql-placeholder {
+	color: $foreground;
+}
+
+// Add to topic button
+#edit_topic_inner:not(.unable_to_post):before {
+    background: $selection;
+	border: 1px solid $current-line;
+}
+.client_container #edit_topic_trigger {
+	color: $blue;
+	&:hover,
+	&:focus {
+		color: lighten($color: $blue, $amount: 15%)
+	}
+}
+
+// Heaer buttons
+.channel_header_info button {
+	color: $foreground;
+}
+.channel_header .blue_on_hover:hover {
+	color: $blue;
+}
+
+.c-message__body,
+.c-message_attachment__footer,
+.c-message:hover .c-message__file_meta {
+	color: $foreground;
+}
+.c-message_attachment,
+.c-message__file_meta {
+	color: $comment;
+}
+.c-message:hover .c-message_attachment__select {
+	border: 1px solid $comment;
+}
+.client_container .c-message--light .c-message__sender .c-message__sender_link {
+	color: $purple;
+	&:hover {
+		color: darken($purple, 20%);
+	}
+}
+
+.c-message:hover .c-message_attachment__border {
+    background: $background;
+}
+.c-message_attachment__border {
+	background: $selection;
+}
+
+.c-message:hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight),
+.c-message--hover:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight),
+.c-message--focus:not(.c-message--highlight):not(.c-message--standalone):not(.c-message--pinned):not(.c-message--ephemeral):not(.c-message--custom_response):not(.c-message--starred):not(.c-message--sli_highlight) {
+	background: $selection;
+	color: $white;
+}
+
+.c-message:hover .c-message__broadcast_preamble_outer,
+.c-message:hover .c-message__broadcast_preamble,
+.c-message--hover .c-message__broadcast_preamble_outer .c-message--focus .c-message__broadcast_preamble_outer,
+.c-message--hover .c-message__broadcast_preamble_outer .c-message--focus .c-message__broadcast_preamble,
+.c-message--hover .c-message__broadcast_preamble .c-message--focus .c-message__broadcast_preamble_outer,
+.c-message--hover .c-message__broadcast_preamble .c-message--focus .c-message__broadcast_preamble {
+	color: $foreground;
+}
+
+.c-mrkdwn__mention, .c-mrkdwn__mention:hover,
+.c-mrkdwn__member--mention,
+.c-mrkdwn__member--mention:hover,
+.c-mrkdwn__broadcast--mention,
+.c-mrkdwn__broadcast--mention:hover,
+.c-mrkdwn__subteam--mention,
+.c-mrkdwn__subteam--mention:hover {
+	color: $yellow;
+	background: rgba(0, 0, 0, 0);
+}
+
+.c-message_list__unread_divider__separator {
+	border-color: $red;
+}
+.c-message_list__unread_divider__label {
+	color: $background;
+	background: $red;
+}
+
+.client_container .c-message a.c-mrkdwn__member--link,
+.client_container .c-message a.c-mrkdwn__subteam--link {
+	background: $selection;
+	color: $green;
+
+	&:hover,
+	&.active,
+	&:focus {
+		background: $green;
+		color: $background;	
+	}
+}
+
+// Button reactions
+.client_container .c-reaction,
+.client_container .c-reaction_add {
+	background: $selection;
+	border: 1px solid $black;
+	color: $foreground;
+
+	&:hover,
+	&:focus {
+		border-color: $current-line;
+	}
+}
+.client_container .c-reaction__count,
+.client_container .c-reaction_add__icon {
+	color: $foreground;
+}
+.client_container .c-reaction--reacted .c-reaction__count {
+	color: $white;
+}
+
+// Ephemeral message
+.c-message--ephemeral {
+	background: $background;
+}
+
+// Message repply bar 
+.c-message__reply_bar:hover,
+.c-message__reply_bar--focus {
+	background-color: $background;
+	.c-message__reply_bar_view_thread,
+	.c-message__reply_bar_view_thread {
+		background-color: $background;
+	}
+}
+.c-message__reply_bar_description,
+.c-message__reply_bar:hover .c-message__reply_bar_arrow,
+.c-message__reply_bar--focus .c-message__reply_bar_arrow {
+    color: $foreground;
+}
+
+// Scroll top
+.supports_custom_scrollbar:not(.slim_scrollbar) #messages_container:after {
+	background: $background;
+}
+
+// Footer
+#footer {
+	background: $mine_shaft;
+}
+#msg_form {
+	margin: 0.5rem 1.25rem 0 1.25rem;
+}
+
+// Message Input
+#msg_input {
+	background: $background;
+	color: $foreground;
+}
+
+#primary_file_button {
+	background: $background;
+	color: $foreground;
+
+	&.active,
+	&.focus-ring,
+	&:hover,
+	&:focus {
+		background: $green;
+		color: $white;
+		border-color: $green;
+	}
+}
+
+.message_pane_scroller:after {
+	display: block;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 170px;
+	height: 300px;
+	background: url("https://localhost:8080/background.png") no-repeat bottom right;
+	background-size: contain;
+}
+
+// Unread messages
+.p-message_pane__unread_banner__banner,
+.p-message_pane__unread_banner__close--detached {
+	background: $aqua;
+	color: #fff;
+
+	&:hover {
+		background: darken($color: $aqua, $amount: 20%);
+	}
+}
+.p-message_pane__unread_banner__close--detached {
+    border-left: 1px solid darken($color: $aqua, $amount: 20%);
+}
+
+#client_body:not(.onboarding):before {
+	background: $background;
+}
+
+// Sidebar
+.p-channel_sidebar {
+	background: $shark !important;
+	color: $foreground !important;
+}
+
+.p-channel_sidebar__channel--selected .p-channel_sidebar__name {
+	color: $white !important;
+}
+.p-channel_sidebar__channel,
+.p-channel_sidebar__link,
+.p-channel_sidebar__channel:link,
+.p-channel_sidebar__link:link,
+.p-channel_sidebar__channel:visited,
+.p-channel_sidebar__link:visited,
+.p-channel_sidebar__channel:hover,
+.p-channel_sidebar__link:hover {
+	color: $foreground !important;
+}
+
+.p-channel_sidebar__channel--selected,
+.p-channel_sidebar__channel--selected:hover,
+.p-channel_sidebar__link--selected,
+.p-channel_sidebar__link--selected:hover {
+	background: $purple !important;
+	color: $white !important;
+
+	.p-channel_sidebar__badge,
+	.p-channel_sidebar__banner--mentions {
+		background: $white !important;
+		color: $purple !important;
+	}
+}
+
+.p-channel_sidebar__badge,
+.p-channel_sidebar__banner--mentions {
+	background: $red !important;
+	color: $white !important;
+}
+
+// Division
+#footer,
+#col_messages,
+.channel_header,
+#client_body:not(.onboarding):before {
+	box-shadow: none;
+}
+#client_body:not(.onboarding):before {
+	border-bottom: 1px solid $mine_shaft;
+}
