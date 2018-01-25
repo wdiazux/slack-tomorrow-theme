@@ -398,4 +398,16 @@ body:not(.loading) #team_menu.active {
 .cm-s-default .cm-def {
   color: #81a2be;
 }
+
+.cm-s-default .cm-comment {
+  color: #de935f;
+}
+
+.cm-s-default .cm-number {
+  color: #b5bd68;
+}
+
+.cm-s-default .cm-keyword {
+  color: #b294bb;
+}
 /*# sourceMappingURL=custom.css.map */

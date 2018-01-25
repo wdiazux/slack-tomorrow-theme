@@ -403,6 +403,17 @@ body:not(.loading) #team_menu.active {
 	background: -webkit-linear-gradient(top, rgba(29,31,33,0) 0%,rgba(29,31,33,1) 100%);
 	background: linear-gradient(to bottom, rgba(29,31,33,0) 0%,rgba(29,31,33,1) 100%);
 }
-.cm-s-default .cm-def {
-	color: $blue;
+.cm-s-default {
+	.cm-def {
+        color: $blue;
+	}
+	.cm-comment {
+        color: $orange;
+	}
+	.cm-number {
+		color: $green;
+	}
+	.cm-keyword {
+		color: $purple;
+	}
 }
