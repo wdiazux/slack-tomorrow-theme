@@ -410,4 +410,8 @@ body:not(.loading) #team_menu.active {
 .cm-s-default .cm-keyword {
   color: #b294bb;
 }
+
+.cm-s-default .cm-atom {
+  color: #8abeb7;
+}
 /*# sourceMappingURL=custom.css.map */
