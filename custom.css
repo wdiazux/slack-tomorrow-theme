@@ -70,6 +70,22 @@ body:not(.loading) #team_menu.active {
   color: #c5c8c6;
 }
 
+#team_menu {
+  border-bottom: 1px solid #3C3C3C;
+}
+
+body:not(.loading) #team_menu:hover,
+body:not(.loading) #team_menu.active {
+  border-bottom: 1px solid #3C3C3C;
+}
+
+#team_menu:before,
+#team_menu .notifications_menu_btn,
+#team_menu .team_name_caret,
+#team_menu_user_name {
+  color: #c5c8c6 !important;
+}
+
 .c-input_select {
   background: #373b41;
 }
@@ -361,6 +377,22 @@ body:not(.loading) #team_menu.active {
 .p-channel_sidebar__banner--mentions {
   background: #cc6666 !important;
   color: #ffffff !important;
+}
+
+.p-channel_sidebar__channel:hover, .p-channel_sidebar__link:hover, .p-channel_sidebar__close_container:hover {
+  background: #373b41 !important;
+}
+
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
+.p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name, .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+.p-channel_sidebar__section_heading_label--clickable:hover, .p-channel_sidebar__section_heading_label--unreads, .p-channel_sidebar__quickswitcher:hover {
+  color: #969896 !important;
+}
+
+.c-scrollbar__bar,
+.p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
+.p-channel_sidebar .c-scrollbar__bar {
+  background: rgba(206, 206, 212, 0.75) !important;
 }
 
 #footer,

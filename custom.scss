@@ -16,7 +16,8 @@ $black: #000000;
 $mine_shaft: #3C3C3C;
 $shark: #252526;
 
-// General style
+// General
+// -------
 .client_container {
     background: $background;
 	color: $foreground;
@@ -71,6 +72,7 @@ $shark: #252526;
 }
 
 // Channel Bar
+// -----------
 .client_channels_list_container {
     background: $background;
 }
@@ -80,6 +82,7 @@ $shark: #252526;
 	color: $foreground;
 }
 
+// Team menu
 #team_menu,
 #team_menu_overlay,
 #col_channels_overlay,
@@ -87,6 +90,19 @@ body:not(.loading) #team_menu:hover,
 body:not(.loading) #team_menu.active {
 	background: $mine_shaft;
 	color: $foreground;
+}
+#team_menu {
+	border-bottom: 1px solid $mine_shaft;
+}
+body:not(.loading) #team_menu:hover,
+body:not(.loading) #team_menu.active {
+	border-bottom: 1px solid $mine_shaft;
+}
+#team_menu:before,
+#team_menu .notifications_menu_btn,
+#team_menu .team_name_caret,
+#team_menu_user_name {
+	color: $foreground !important;
 }
 
 // Button select
@@ -101,6 +117,7 @@ body:not(.loading) #team_menu.active {
 }
 
 // Messages
+// --------
 
 // Header
 .channel_header {
@@ -289,6 +306,7 @@ body:not(.loading) #team_menu.active {
 	color: $foreground;
 }
 
+// Send message button
 #primary_file_button {
 	background: $background;
 	color: $foreground;
@@ -303,6 +321,7 @@ body:not(.loading) #team_menu.active {
 	}
 }
 
+// The anime image
 .message_pane_scroller:after {
 	display: block;
 	content: '';
@@ -334,6 +353,7 @@ body:not(.loading) #team_menu.active {
 }
 
 // Sidebar
+// --------
 .p-channel_sidebar {
 	background: $shark !important;
 	color: $foreground !important;
@@ -371,6 +391,25 @@ body:not(.loading) #team_menu.active {
 .p-channel_sidebar__banner--mentions {
 	background: $red !important;
 	color: $white !important;
+}
+
+// Sidebar selection
+.p-channel_sidebar__channel:hover, .p-channel_sidebar__link:hover, .p-channel_sidebar__close_container:hover {
+	background: $selection !important;
+}
+
+// Sidebar - User names colors
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
+.p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name, .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+.p-channel_sidebar__section_heading_label--clickable:hover, .p-channel_sidebar__section_heading_label--unreads, .p-channel_sidebar__quickswitcher:hover {
+	color: $comment !important;
+}
+
+// Scrollbar
+.c-scrollbar__bar,
+.p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
+.p-channel_sidebar .c-scrollbar__bar {
+    background: rgba(206, 206, 212, 0.75) !important;
 }
 
 // Division
