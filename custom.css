@@ -112,6 +112,23 @@ body:not(.loading) #team_menu.active {
   border-top: 1px solid #282a2e;
 }
 
+.presence {
+  color: #c5c8c6;
+}
+
+.presence.active {
+  color: #b5bd68;
+}
+
+#presence.active:before {
+  color: #b5bd68;
+}
+
+.p-channel_sidebar__channel--im .c-presence--active,
+.p-channel_sidebar__channel--im-slackbot:before {
+  color: #b5bd68 !important;
+}
+
 .p-message_pane .c-message_list:not(.c-virtual_list--scrollbar):before,
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider:before {
   background: #3C3C3C;
@@ -379,7 +396,9 @@ body:not(.loading) #team_menu.active {
   color: #ffffff !important;
 }
 
-.p-channel_sidebar__channel:hover, .p-channel_sidebar__link:hover, .p-channel_sidebar__close_container:hover {
+.p-channel_sidebar__channel:hover,
+.p-channel_sidebar__link:hover,
+.p-channel_sidebar__close_container:hover {
   background: #373b41 !important;
 }
 
