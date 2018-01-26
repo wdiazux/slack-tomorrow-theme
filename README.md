@@ -4,7 +4,8 @@ A slack theme using Tomorrow Night colors
 
 # Installation
 
-Add this code in the end of the file `/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`:
+Add this code in the end of the file `ssb-interop.js`:
+MacOS: `/Applications/Slack.app/Contents/Resources/app.asar.unpacked/src/static/ssb-interop.js`
 ```js
 document.addEventListener('DOMContentLoaded', function() {
     $.ajax({
