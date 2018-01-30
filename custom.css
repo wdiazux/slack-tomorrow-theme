@@ -233,6 +233,11 @@ body:not(.loading) #team_menu.active {
   background: #cc6666;
 }
 
+.c-member__display-name--large,
+.c-member__title--large {
+  color: #c5c8c6;
+}
+
 .c-mrkdwn__member--link,
 .c-mrkdwn__subteam--link,
 .client_container .c-message a.c-mrkdwn__member--link,

@@ -250,6 +250,11 @@ body:not(.loading) #team_menu.active {
 	background: $red;
 }
 
+.c-member__display-name--large,
+.c-member__title--large {
+    color: $foreground;
+}
+
 .c-mrkdwn__member--link,
 .c-mrkdwn__subteam--link,
 .client_container .c-message a.c-mrkdwn__member--link,
