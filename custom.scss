@@ -477,3 +477,18 @@ body:not(.loading) #team_menu.active {
 		color: $aqua;
 	}
 }
+
+// Slack call
+.c-message__call_attachment {
+	background: $background;
+	border: 1px solid $selection;
+	.c-message__call_icon {
+		color: $foreground;
+	}
+}
+.c-message__call_info {
+	color: $foreground;
+}
+.c-message__call_sub {
+	color: $comment;
+}

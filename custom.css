@@ -465,4 +465,21 @@ body:not(.loading) #team_menu.active {
 .cm-s-default .cm-atom {
   color: #8abeb7;
 }
+
+.c-message__call_attachment {
+  background: #1d1f21;
+  border: 1px solid #373b41;
+}
+
+.c-message__call_attachment .c-message__call_icon {
+  color: #c5c8c6;
+}
+
+.c-message__call_info {
+  color: #c5c8c6;
+}
+
+.c-message__call_sub {
+  color: #969896;
+}
 /*# sourceMappingURL=custom.css.map */
