@@ -233,16 +233,37 @@ body:not(.loading) #team_menu.active {
   background: #cc6666;
 }
 
+.c-mrkdwn__member--link,
+.c-mrkdwn__subteam--link,
 .client_container .c-message a.c-mrkdwn__member--link,
 .client_container .c-message a.c-mrkdwn__subteam--link {
   background: #373b41;
   color: #b5bd68;
 }
 
-.client_container .c-message a.c-mrkdwn__member--link:hover, .client_container .c-message a.c-mrkdwn__member--link.active, .client_container .c-message a.c-mrkdwn__member--link:focus,
+.c-mrkdwn__member--link:hover, .c-mrkdwn__member--link.active, .c-mrkdwn__member--link:focus,
+.c-mrkdwn__subteam--link:hover,
+.c-mrkdwn__subteam--link.active,
+.c-mrkdwn__subteam--link:focus,
+.client_container .c-message a.c-mrkdwn__member--link:hover,
+.client_container .c-message a.c-mrkdwn__member--link.active,
+.client_container .c-message a.c-mrkdwn__member--link:focus,
 .client_container .c-message a.c-mrkdwn__subteam--link:hover,
 .client_container .c-message a.c-mrkdwn__subteam--link.active,
 .client_container .c-message a.c-mrkdwn__subteam--link:focus {
+  background: #b5bd68;
+  color: #1d1f21;
+}
+
+.client_container a:link,
+.client_container a:visited {
+  color: #b5bd68;
+}
+
+.client_container a:link:hover, .client_container a:link.active, .client_container a:link:focus,
+.client_container a:visited:hover,
+.client_container a:visited.active,
+.client_container a:visited:focus {
   background: #b5bd68;
   color: #1d1f21;
 }
@@ -481,5 +502,11 @@ body:not(.loading) #team_menu.active {
 
 .c-message__call_sub {
   color: #969896;
+}
+
+#snippet_prompt,
+#special_formatting_text,
+#typing_text {
+  color: #c5c8c6;
 }
 /*# sourceMappingURL=custom.css.map */

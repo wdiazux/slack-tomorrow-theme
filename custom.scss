@@ -250,11 +250,23 @@ body:not(.loading) #team_menu.active {
 	background: $red;
 }
 
+.c-mrkdwn__member--link,
+.c-mrkdwn__subteam--link,
 .client_container .c-message a.c-mrkdwn__member--link,
 .client_container .c-message a.c-mrkdwn__subteam--link {
 	background: $selection;
 	color: $green;
 
+	&:hover,
+	&.active,
+	&:focus {
+		background: $green;
+		color: $background;	
+	}
+}
+.client_container a:link,
+.client_container a:visited {
+	color: $green;
 	&:hover,
 	&.active,
 	&:focus {
@@ -491,4 +503,11 @@ body:not(.loading) #team_menu.active {
 }
 .c-message__call_sub {
 	color: $comment;
+}
+
+// Typing text
+#snippet_prompt,
+#special_formatting_text,
+#typing_text {
+	color: $foreground;
 }
