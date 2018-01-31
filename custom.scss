@@ -269,14 +269,17 @@ body:not(.loading) #team_menu.active {
 		color: $background;	
 	}
 }
-.client_container a:link,
-.client_container a:visited {
-	color: $green;
-	&:hover,
-	&.active,
-	&:focus {
-		background: $green;
-		color: $background;	
+// Username header
+.p-message_pane__foreword__description {
+	.c-mrkdwn__member--link,
+	.c-mrkdwn__subteam--link {
+		color: $green !important;
+		&:hover,
+		&.active,
+		&:focus {
+            background: $green !important;
+            color: $background !important;	
+        }
 	}
 }
 

@@ -260,17 +260,17 @@ body:not(.loading) #team_menu.active {
   color: #1d1f21;
 }
 
-.client_container a:link,
-.client_container a:visited {
-  color: #b5bd68;
+.p-message_pane__foreword__description .c-mrkdwn__member--link,
+.p-message_pane__foreword__description .c-mrkdwn__subteam--link {
+  color: #b5bd68 !important;
 }
 
-.client_container a:link:hover, .client_container a:link.active, .client_container a:link:focus,
-.client_container a:visited:hover,
-.client_container a:visited.active,
-.client_container a:visited:focus {
-  background: #b5bd68;
-  color: #1d1f21;
+.p-message_pane__foreword__description .c-mrkdwn__member--link:hover, .p-message_pane__foreword__description .c-mrkdwn__member--link.active, .p-message_pane__foreword__description .c-mrkdwn__member--link:focus,
+.p-message_pane__foreword__description .c-mrkdwn__subteam--link:hover,
+.p-message_pane__foreword__description .c-mrkdwn__subteam--link.active,
+.p-message_pane__foreword__description .c-mrkdwn__subteam--link:focus {
+  background: #b5bd68 !important;
+  color: #1d1f21 !important;
 }
 
 .client_container .c-reaction,
