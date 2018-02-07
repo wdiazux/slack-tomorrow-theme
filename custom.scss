@@ -459,6 +459,16 @@ body:not(.loading) #team_menu.active {
   color: $comment !important;
 }
 
+// Unread messages
+.p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
+.p-channel_sidebar__link--unread:not(.p-channel_sidebar__link--selected) .p-channel_sidebar__name,
+.p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
+.p-channel_sidebar__section_heading_label--clickable:hover,
+.p-channel_sidebar__section_heading_label--unreads,
+.p-channel_sidebar__quickswitcher:hover {
+    color: $white !important;
+}
+
 // Scrollbar
 .c-scrollbar__bar,
 .p-channel_sidebar .c-custom_scrollbar__thumb_vertical,
