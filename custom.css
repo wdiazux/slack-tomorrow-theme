@@ -461,6 +461,7 @@ body:not(.loading) #team_menu.active {
 }
 
 #client_body:not(.onboarding):before {
+  background: #3C3C3C;
   border-bottom: 1px solid #3C3C3C;
 }
 
@@ -525,6 +526,108 @@ body:not(.loading) #team_menu.active {
 #snippet_prompt,
 #special_formatting_text,
 #typing_text {
+  color: #c5c8c6;
+}
+
+#threads_msgs_scroller_div,
+ts-thread .thread_messages,
+.reply_input_container .ql-container,
+ts-thread {
+  background: #1d1f21;
+  color: #c5c8c6;
+}
+
+ts-message {
+  color: #c5c8c6;
+}
+
+ts-thread .thread_messages {
+  border: 1px solid #3C3C3C;
+}
+
+ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply),
+ts-message.message--focus:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply),
+ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) {
+  background: rgba(55, 59, 65, 0.7);
+}
+
+ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) .msg_inline_attachment_column.column_border,
+ts-message.message--focus:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) .msg_inline_attachment_column.column_border,
+ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply) .msg_inline_attachment_column.column_border {
+  background: #1d1f21;
+}
+
+.reply_input_container .ql-container {
+  border-color: #3C3C3C;
+}
+
+.reply_input_container .ql-container.focus, .reply_input_container .ql-container:hover {
+  border-color: #3C3C3C;
+}
+
+.msg_inline_attachment_column.column_border {
+  background: #373b41;
+}
+
+#threads_msgs a {
+  color: #81a2be;
+}
+
+#threads_msgs a:link, #threads_msgs a:visited {
+  color: #81a2be;
+}
+
+#threads_msgs a:active, #threads_msgs a:focus, #threads_msgs a:hover {
+  color: #b3c7d8;
+}
+
+.dark_theme ts-message .message_content .message_sender,
+.light_theme ts-message .message_content .message_sender,
+ts-thread .thread_header .thread_channel_name a {
+  color: #b294bb !important;
+}
+
+.dark_theme ts-message .message_content .message_sender:hover,
+.light_theme ts-message .message_content .message_sender:hover,
+ts-thread .thread_header .thread_channel_name a:hover {
+  color: #825b8e !important;
+}
+
+#file_reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
+#reply_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container,
+.reply_input_container .reply_container_info .reply_broadcast_buttons_container .reply_broadcast_label_container {
+  color: #c5c8c6;
+}
+
+#convo_tab .thread_participants,
+ts-thread .thread_participants {
+  color: #c5c8c6;
+}
+
+#threads_msgs_scroller_div .threads_caught_up_divider .divider_label {
+  background: #282a2e;
+  color: #c5c8c6;
+}
+
+#threads_msgs_scroller_div .threads_caught_up_divider .divider_line {
+  border-top: 1px solid #3C3C3C;
+}
+
+.rxn {
+  background: #373b41;
+  border: 1px solid #000000;
+  color: #c5c8c6;
+}
+
+.rxn:hover, .rxn:focus {
+  border-color: #282a2e;
+}
+
+.rxn .emoji_rxn_count {
+  color: #c5c8c6;
+}
+
+.unread_empty_state {
   color: #c5c8c6;
 }
 /*# sourceMappingURL=custom.css.map */
