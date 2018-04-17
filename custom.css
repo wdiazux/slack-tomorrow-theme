@@ -96,7 +96,7 @@ body:not(.loading) #team_menu.active {
 }
 
 .p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider {
-  background: #1d1f21;
+  background: transparent;
 }
 
 .channel_header {
