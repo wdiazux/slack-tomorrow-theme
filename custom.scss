@@ -16,6 +16,7 @@ $white: #ffffff;
 $black: #000000;
 $mine_shaft: #3C3C3C;
 $shark: #252526;
+
 // General
 // -------
 .client_container {
@@ -356,6 +357,9 @@ body:not(.loading) #team_menu.active {
 // Message Input
 #msg_input {
   background: $background;
+  color: $foreground;
+}
+.texty_legacy .ql-placeholder {
   color: $foreground;
 }
 

@@ -339,6 +339,10 @@ body:not(.loading) #team_menu.active {
   color: #c5c8c6;
 }
 
+.texty_legacy .ql-placeholder {
+  color: #c5c8c6;
+}
+
 #primary_file_button {
   background: #1d1f21;
   color: #c5c8c6;
