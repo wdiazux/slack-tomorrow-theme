@@ -95,6 +95,10 @@ body:not(.loading) #team_menu.active {
   color: #c5c8c6;
 }
 
+.p-message_pane .c-message_list.c-virtual_list--scrollbar > .c-scrollbar__hider {
+  background: #1d1f21;
+}
+
 .channel_header {
   background: #3C3C3C;
   color: #c5c8c6;
