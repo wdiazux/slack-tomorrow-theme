@@ -249,16 +249,26 @@ body:not(.loading) #team_menu.active {
   color: $foreground;
 }
 
-.c-mrkdwn__mention,
-.c-mrkdwn__mention:hover,
-.c-mrkdwn__member--mention,
-.c-mrkdwn__member--mention:hover,
-.c-mrkdwn__broadcast--mention,
-.c-mrkdwn__broadcast--mention:hover,
-.c-mrkdwn__subteam--mention,
-.c-mrkdwn__subteam--mention:hover {
+// My user mention
+.client_container .c-mrkdwn__broadcast--mention,
+.client_container .c-mrkdwn__broadcast--mention:hover,
+.client_container .c-mrkdwn__highlight,
+.client_container .c-mrkdwn__mention,
+.client_container .c-mrkdwn__mention:hover,
+.client_container .c-mrkdwn__subteam--mention,
+.client_container .c-mrkdwn__subteam--mention:hover,
+.client_container .c-member_slug--mention,
+.client_container .c-member_slug--mention:hover {
   color: $yellow;
-  background: rgba(0, 0, 0, 0);
+  background: $selection;
+}
+.client_container .c-member_slug--mention:link,
+.client_container .c-member_slug--mention:visited {
+   color: $yellow;
+}
+// Others mention
+.client_container .c-member_slug--link {
+  background: $selection;
 }
 
 .c-message_list__unread_divider__separator {
