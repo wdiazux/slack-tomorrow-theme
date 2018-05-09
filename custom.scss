@@ -249,6 +249,14 @@ body:not(.loading) #team_menu.active {
   color: $foreground;
 }
 
+// Others mention
+.client_container .c-member_slug--link {
+  background: $shark;
+}
+.client_container .c-member_slug--link:link,
+.client_container .c-member_slug--link:visited {
+  color: $green;
+}
 // My user mention
 .client_container .c-mrkdwn__broadcast--mention,
 .client_container .c-mrkdwn__broadcast--mention:hover,
@@ -260,15 +268,11 @@ body:not(.loading) #team_menu.active {
 .client_container .c-member_slug--mention,
 .client_container .c-member_slug--mention:hover {
   color: $yellow;
-  background: $selection;
+  background: $shark;
 }
 .client_container .c-member_slug--mention:link,
 .client_container .c-member_slug--mention:visited {
-   color: $yellow;
-}
-// Others mention
-.client_container .c-member_slug--link {
-  background: $selection;
+  color: $yellow;
 }
 
 .c-message_list__unread_divider__separator {

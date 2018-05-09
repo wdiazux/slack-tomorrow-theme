@@ -222,6 +222,15 @@ body:not(.loading) #team_menu.active {
   color: #c5c8c6;
 }
 
+.client_container .c-member_slug--link {
+  background: #252526;
+}
+
+.client_container .c-member_slug--link:link,
+.client_container .c-member_slug--link:visited {
+  color: #b5bd68;
+}
+
 .client_container .c-mrkdwn__broadcast--mention,
 .client_container .c-mrkdwn__broadcast--mention:hover,
 .client_container .c-mrkdwn__highlight,
@@ -232,16 +241,12 @@ body:not(.loading) #team_menu.active {
 .client_container .c-member_slug--mention,
 .client_container .c-member_slug--mention:hover {
   color: #f0c674;
-  background: #373b41;
+  background: #252526;
 }
 
 .client_container .c-member_slug--mention:link,
 .client_container .c-member_slug--mention:visited {
   color: #f0c674;
-}
-
-.client_container .c-member_slug--link {
-  background: #373b41;
 }
 
 .c-message_list__unread_divider__separator {
