@@ -54,19 +54,17 @@ function createHTTPSConfig() {
 
 module.exports = (env, argv) => ({
     context: __dirname,
-    entry: {
-        foo: path.resolve(__dirname, 'custom.scss'),
-    },
+    entry: path.resolve(__dirname, 'src', 'custom.scss'),
+    output: { filename: 'webpack.css' },
     devServer: {
         https: createHTTPSConfig(),
         host: '0.0.0.0',
         public: 'slack.local:8080',
         useLocalIp: true,
+        writeToDisk: true,
         allowedHosts: ['slack.local'],
         before: function(app) {
-            // be flexible with people accessing via a local reticulum on another port
             app.use(cors());
-            // networked-aframe makes HEAD requests to the server for time syncing. Respond with an empty body.
             app.head('*', function(req, res, next) {
                 if (req.method === 'HEAD') {
                     res.append('Date', new Date().toGMTString());
@@ -79,10 +77,8 @@ module.exports = (env, argv) => ({
     },
     plugins: [
         new MiniCssExtractPlugin({
-            // Options similar to the same options in webpackOptions.output
-            // both options are optional
-            filename: '[name].css',
-            chunkFilename: '[id].css',
+            filename: 'custom.css',
+            chunkFilename: 'custom.css',
         })
     ],
     module: {

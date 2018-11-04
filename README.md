@@ -10,7 +10,7 @@ Add this code in the end of the file `ssb-interop.js`:
 ```js
 document.addEventListener('DOMContentLoaded', function() {
     $.ajax({
-        url: 'https://cdn.rawgit.com/wdiazux/slack-tomorrow-theme/master/custom.css',
+        url: 'https://cdn.rawgit.com/wdiazux/slack-tomorrow-theme/master/dist/custom.css',
         success: function(css) {
             $("<style></style>").appendTo('head').html(css)
         }
