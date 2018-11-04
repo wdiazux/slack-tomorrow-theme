@@ -55,7 +55,7 @@ function createHTTPSConfig() {
 module.exports = (env, argv) => ({
     context: __dirname,
     entry: path.resolve(__dirname, 'src', 'custom.scss'),
-    output: { filename: 'webpack.css' },
+    output: { filename: 'main.js' },
     devServer: {
         https: createHTTPSConfig(),
         host: '0.0.0.0',

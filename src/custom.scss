@@ -432,7 +432,7 @@ body:not(.loading) #team_menu.active {
 }
 
 #client_body:not(.onboarding):not(.feature_global_nav_layout):before {
-    background: $background;
+    background: $mine_shaft;
     box-shadow: inset 1px 0 0 0 $background;
 }
 
@@ -598,6 +598,18 @@ ts-thread {
     color: $foreground;
 }
 
+.supports_custom_scrollbar:not(.slim_scrollbar) {
+    #threads_msgs_scroller_div::-webkit-scrollbar-thumb {
+        background: rgba(206, 206, 212, 0.75) !important;
+        box-shadow: none;
+        color: $background;
+    }
+    #threads_msgs_scroller_div::-webkit-scrollbar-track {
+        background: $background;
+        box-shadow: none;
+    }
+}
+
 ts-message {
     color: $foreground;
 }
@@ -614,6 +626,17 @@ ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.n
     .msg_inline_attachment_column.column_border {
         background: $background;
     }
+}
+
+ts-message.active:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator),
+ts-message.message--focus:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator),
+ts-message:hover:not(.standalone):not(.multi_delete_mode):not(.highlight):not(.new_reply):not(.show_broadcast_indicator) {
+    background: $selection;
+}
+
+#threads_msgs .inline_message_input_container.with_file_upload {
+    background: $background;
+    border-color: $mine_shaft;
 }
 
 .reply_input_container .ql-container {
@@ -670,6 +693,9 @@ ts-thread .thread_participants {
     .divider_line {
         border-top: 1px solid $mine_shaft;
     }
+}
+#threads_msgs_scroller_div:not(.loading):before {
+    background: $background;
 }
 
 // Button reactions
