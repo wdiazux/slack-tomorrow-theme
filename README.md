@@ -32,7 +32,7 @@ The source file is written in Sass, you can found `custom.scss` file inside the 
 
 These are the commands to generate the CSS file:
 
-First you need to install depencies for wepack:
+First you need to install dependencies for webpack:
 ```bash
 npm install
 ```
