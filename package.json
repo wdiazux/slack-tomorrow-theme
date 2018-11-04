@@ -21,10 +21,13 @@
   ],
   "homepage": "https://github.com/wdiazux/slack-tomorrow-theme#readme",
   "devDependencies": {
+    "autoprefixer": "^9.3.1",
     "cors": "^2.8.4",
     "css-loader": "^1.0.1",
+    "cssnano": "^4.1.7",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.9.4",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0",
     "selfsigned": "^1.10.4",
     "webpack": "^4.24.0",

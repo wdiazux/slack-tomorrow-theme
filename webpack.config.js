@@ -84,12 +84,33 @@ module.exports = (env, argv) => ({
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.(sa|sc|c)ss$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'sass-loader'
-                    //'postcss-loader',
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            name: '[path][name].[ext]',
+                            sourceMap: true
+                        }
+                    },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            sourceMap: true,
+                            plugins: () => [
+                                require('autoprefixer'),
+                                require('cssnano')
+                            ],
+                            minimize: true
+                        }
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true
+                        }
+                    }
                 ]
             }
         ]
