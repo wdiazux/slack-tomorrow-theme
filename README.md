@@ -1,3 +1,6 @@
+**Discontinued**
+Slack now includes a [dark theme](https://slackhq.com/dark-mode-for-slack-desktop), this theme is discontinued.
+
 # Slack Tomorrow Theme
 
 A slack theme using Tomorrow Night colors
